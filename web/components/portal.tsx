@@ -40,7 +40,7 @@ const Portal = () => {
       <div className="portal ">
         <div className="portal-row portal-row grid grid-cols-1 sm:grid-cols-2 gap-4">
           {Array(maxPlayers)
-            .fill()
+            .fill(0)
             .map((_, index) => (
               <div key={index} className="portal-cell p-4 border border-gray-300">
                 {players[index] ? (
